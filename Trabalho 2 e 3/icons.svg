@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="icon-coberto" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M2 12L12 3l10 9v2h-2v7H4v-7H2v-2zm4 7h12v-7H6v7zm-2-9.28V11h16v-1.28L12 5.1l-8 5.62z"/>
+  </symbol>
+  <symbol id="icon-ar-livre" viewBox="0 0 24 24" fill="currentColor">
+    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"/>
+    <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" fill="none"/>
+  </symbol>
+  <symbol id="icon-vigilancia" viewBox="0 0 24 24" fill="currentColor">
+    <circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="2" fill="none"/>
+    <circle cx="12" cy="12" r="3" fill="currentColor"/>
+  </symbol>
+  <symbol id="icon-iluminacao" viewBox="0 0 24 24" fill="currentColor">
+    <circle cx="12" cy="12" r="5" fill="currentColor"/>
+    <g stroke="currentColor" stroke-width="2">
+      <line x1="12" y1="1" x2="12" y2="4"/>
+      <line x1="12" y1="20" x2="12" y2="23"/>
+      <line x1="4.22" y1="4.22" x2="6.34" y2="6.34"/>
+      <line x1="17.66" y1="17.66" x2="19.78" y2="19.78"/>
+      <line x1="1" y1="12" x2="4" y2="12"/>
+      <line x1="20" y1="12" x2="23" y2="12"/>
+      <line x1="4.22" y1="19.78" x2="6.34" y2="17.66"/>
+      <line x1="17.66" y1="6.34" x2="19.78" y2="4.22"/>
+    </g>
+  </symbol>
+</svg>
