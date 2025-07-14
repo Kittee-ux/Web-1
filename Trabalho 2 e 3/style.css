@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background: #fffbe6;
+  background: #c4c3bd;
   margin: 0;
   padding: 0;
 }
@@ -24,11 +24,7 @@ h1 {
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 2px 8px #0001;
-  border-left: 8px solid transparent;
 }
-.ponto.disponivel { border-color: #4caf50; }
-.ponto.quase-cheio { border-color: #ffc107; }
-.ponto.lotado { border-color: #f44336; }
 
 .ponto h2 { margin: 0 0 8px; font-size: 20px; color: #34495e; }
 .ponto p { margin: 4px 0; font-size: 15px; color: #555; }
