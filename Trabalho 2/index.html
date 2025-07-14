@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pontos de Estacionamento - Campus</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #c4c3bd;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .legend {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 20px 0;
+      flex-wrap: wrap;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.9em;
+    }
+
+    .legend-color {
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
+      display: inline-block;
+    }
+
+    .available { background-color: #4CAF50; }     /* verde */
+    .almost-full { background-color: #FFC107; }   /* amarelo */
+    .full { background-color: #F44336; }          /* vermelho */
+
+    .parking-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .parking-point {
+      background-color: white;
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 350px;
+      box-sizing: border-box;
+    }
+
+    /* .parking-point.available, .parking-point.almost-full, .parking-point.full removidas as listras */
+
+    .parking-header {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .info {
+      font-size: 0.95em;
+      margin-bottom: 4px;
+    }
+
+    .extra-info {
+      font-size: 0.85em;
+      color: #555;
+      margin-top: 8px;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Status dos Pontos de Estacionamento</h1>
+
+  <div class="legend">
+    <div class="legend-item"><span class="legend-color available"></span>Disponível</div>
+    <div class="legend-item"><span class="legend-color almost-full"></span>Quase Cheio</div>
+    <div class="legend-item"><span class="legend-color full"></span>Lotado</div>
+  </div>
+
+  <div class="parking-container">
+
+
+    <div class="parking-point available">
+      <div class="parking-header">
+        <span>Ponto A1</span>
+        <span>Bloco de Engenharia</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 8px; margin: 6px 0 2px 0;">
+        <span class="legend-color available" title="Disponível"></span>
+        <span style="font-size:0.95em; margin-left:2px;">Disponível</span>
+      </div>
+      <div class="info">Capacidade: 15 vagas</div>
+      <div class="info">Ocupadas: 6 bicicletas</div>
+      <div class="extra-info">Coberto · Iluminação</div>
+    </div>
+    <div class="parking-point almost-full">
+      <div class="parking-header">
+        <span>Ponto B2</span>
+        <span>Biblioteca</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 8px; margin: 6px 0 2px 0;">
+        <span class="legend-color almost-full" title="Quase Cheio"></span>
+        <span style="font-size:0.95em; margin-left:2px;">Quase Cheio</span>
+      </div>
+      <div class="info">Capacidade: 15 vagas</div>
+      <div class="info">Ocupadas: 10 bicicletas</div>
+      <div class="extra-info">Ao ar livre · Sem vigilância</div>
+    </div>
+    <div class="parking-point full">
+      <div class="parking-header">
+        <span>Ponto C3</span>
+        <span>Bloco de T.I</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 8px; margin: 6px 0 2px 0;">
+        <span class="legend-color full" title="Lotado"></span>
+        <span style="font-size:0.95em; margin-left:2px;">Lotado</span>
+      </div>
+      <div class="info">Capacidade: 15 vagas</div>
+      <div class="info">Ocupadas: 12 bicicletas</div>
+      <div class="extra-info">Coberto · Vigilância 24h</div>
+    </div>
+
+  </div>
+</body>
+</html>
+
